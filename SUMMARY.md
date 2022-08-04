@@ -1,14 +1,7 @@
 # Table of contents
 
-## Guides
-
-* [Docs](README.md)
-* [Caddy](guides/caddy.md)
-
-## Chain Services
-
-* [RPC/API Endpoints](chain-services/rpc-api-endpoints.md)
-* [StateSync](chain-services/statesync/README.md)
-  * [BitSong](chain-services/statesync/bitsong.md)
-  * [Omniflix](chain-services/statesync/omniflix.md)
-  * [Juno](chain-services/statesync/juno.md)
+* [Guides](README.md)
+* [Chain Services](chain-services/README.md)
+  * [Network Endpoints](chain-services/network-endpoints.md)
+  * [Statsync](chain-services/statsync/README.md)
+    * [Bitsong](chain-services/statsync/bitsong.md)

@@ -6,3 +6,4 @@
   * [State-Sync](chain-services/statsync/README.md)
     * [Bitsong](chain-services/statsync/bitsong.md)
     * [Juno](chain-services/statsync/juno.md)
+    * [Omniflix](chain-services/statsync/omniflix.md)

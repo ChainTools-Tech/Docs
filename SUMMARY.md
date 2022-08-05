@@ -5,3 +5,4 @@
   * [Network Endpoints](chain-services/network-endpoints.md)
   * [Statsync](chain-services/statsync/README.md)
     * [Bitsong](chain-services/statsync/bitsong.md)
+    * [Juno](chain-services/statsync/juno.md)

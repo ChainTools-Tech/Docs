@@ -4,6 +4,7 @@
   * [Caddy](readme/caddy.md)
   * [Big backup server guide](readme/big-backup-server-guide.md)
 * [Chain Services](chain-services/README.md)
+  * [Peers & Seeds](chain-services/peers-and-seeds.md)
   * [Network Endpoints](chain-services/network-endpoints.md)
   * [State-Sync](chain-services/statsync/README.md)
     * [Comdex](chain-services/statsync/comdex.md)

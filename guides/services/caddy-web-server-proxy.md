@@ -2,7 +2,7 @@
 description: Install Caddy to a service
 ---
 
-# Caddy
+# Caddy Web Server/Proxy
 
 Most people use Caddy as a web server or proxy, but at its core, Caddy is a server of servers. With the [requisite modules](https://caddyserver.com/docs/modules/), it can take on the role of any long-running process!
 
@@ -10,9 +10,9 @@ Configuration is both dynamic and exportable with [Caddy's API](https://caddyser
 
 Caddy compiles for all major platforms and has no runtime dependencies.
 
-**install Caddy on to Ubuntu system**
+### **Install Caddy on to Ubuntu system**
 
-```
+```bash
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
@@ -20,7 +20,7 @@ sudo apt update
 sudo apt install caddy
 ```
 
-**Configuring Caddyfile**
+### **Configuring Caddyfile**
 
 Edit the config file which will be installed in `/etc/caddy/Caddyfile`
 
@@ -30,9 +30,9 @@ You can either comment all lines with #.
 Or just wipe whole content and create your own
 {% endhint %}
 
-**Example Configuration**
+### **Example Configuration**
 
-```
+```json
 https://rpc.juno.chaintools.tech { 
   reverse_proxy http://<RPC-SERVER-IP>:PORT { 
      header_down Access-Control-Allow-Origin * 
@@ -50,7 +50,7 @@ https://rpc.juno.chaintools.tech {
   }
 ```
 
-**Create a service file for Caddy**
+### **Create a service file for Caddy**
 
 ```
 cat /lib/systemd/system/caddy.service

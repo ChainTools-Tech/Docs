@@ -15,7 +15,7 @@ installimage
 1. once you select ubuntu there will be blue screen with some disk configs this is important .. we have to make some changes there
 2. select ubuntu 2004 3rd one
 
-![](../.gitbook/assets/ubuntu.png)
+![](../../.gitbook/assets/ubuntu.png)
 
 ```javascript
 config files by commenting out DRIVE3 DRIVE4 by using # 
@@ -40,7 +40,7 @@ mount
 
 ```
 
-![](../.gitbook/assets/mount.png)
+![](../../.gitbook/assets/mount.png)
 
 ```javascript
 reboot

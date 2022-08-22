@@ -5,7 +5,7 @@ description: >-
   a snapshot of the application state
 ---
 
-# Statsync
+# State-Sync
 
 #### Enable StateSync <a href="#enable-statesync" id="enable-statesync"></a>
 

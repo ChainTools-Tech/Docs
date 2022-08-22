@@ -15,5 +15,5 @@
 | OmniFlix   | [RPC](https://rpc.omniflix.chaintools.tech), GRPC, [API](https://api.omniflix.chaintools.tech)                                          |
 | Rizon      | [RPC](https://rpc.rizon.chaintools.tech), GRPC, [API](https://api.rizon.chaintools.tech)                                                |
 | Sentinel   | [RPC](https://rpc.sentinel.chaintools.tech), [GRPC](https://grpc.sentonel.chaintools.tech), [API](https://api.sentinel.chaintools.tech) |
-| SifChain   | [RPC](https://rpc.sifchian.chaintools.tech), GRPC, [API](https://api.sifchain.chaintools.tech)                                          |
+| SifChain   | [RPC](https://rpc.sifchain.chaintools.tech), GRPC, [API](https://api.sifchain.chaintools.tech)                                          |
 

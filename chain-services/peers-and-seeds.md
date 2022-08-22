@@ -21,3 +21,13 @@ Query connected peers on your network&#x20;
 ```javascript
 curl localhost:26657/net_info | jq '"(.result.peers[] | .node_info.id + "@" + .remote_ip)"'
 ```
+
+|          |              |      |
+| -------- | ------------ | ---- |
+| NETWORK  | CHAIN-ID     | LIST |
+| Comdex   | comdex-1     |      |
+| Evmos    | evmos-9001-2 |      |
+| Bitsong  |              |      |
+| Juno     | Juno-1       |      |
+| Omniflix | flixnet-1    |      |
+|          |              |      |

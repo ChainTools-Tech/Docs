@@ -3,7 +3,7 @@
 ### Check how much disk space is allocated for journalctl
 
 ```bash
-journalctl --disk-usage
+sudo journalctl --disk-usage
 ```
 
 ### Adjust journalctl diskspace allocation

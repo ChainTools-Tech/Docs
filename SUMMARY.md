@@ -12,7 +12,3 @@
     * [Bitsong](chain-services/statsync/bitsong.md)
     * [Juno](chain-services/statsync/juno.md)
     * [Omniflix](chain-services/statsync/omniflix.md)
-
-## Group 1
-
-* [Test new group](group-1/test-new-group.md)

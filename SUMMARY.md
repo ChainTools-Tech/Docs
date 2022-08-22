@@ -1,7 +1,11 @@
 # Table of contents
 
 * [Guides](README.md)
-  * [Caddy](readme/caddy.md)
+  * [Install Golang](readme/install-golang.md)
+  * [Install Rust](readme/install-rust.md)
+  * [Configure journalctl](readme/configure-journalctl.md)
+  * [Caddy Web Server/Proxy](readme/caddy-web-server-proxy.md)
+  * [Systemd Service Template](readme/systemd-service-template.md)
   * [Big backup server guide](readme/big-backup-server-guide.md)
 * [Chain Services](chain-services/README.md)
   * [General](chain-services/general.md)

@@ -2,10 +2,20 @@
 
 ### Download and extract repository
 
+#### AMD and Intel compatible processors
+
 ```bash
 GOVER=$(curl https://go.dev/VERSION?m=text)
 wget https://golang.org/dl/${GOVER}.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-amd64.tar.gz
+```
+
+#### **ARM processors**
+
+```bash
+GOVER=$(curl https://go.dev/VERSION?m=text)
+wget https://golang.org/dl/${GOVER}.linux-arm64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-arm64.tar.gz
 ```
 
 **NOTE**: That will install latest version of Go

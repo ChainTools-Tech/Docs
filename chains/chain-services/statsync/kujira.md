@@ -6,7 +6,8 @@ description: Build and synchronise node from state-sync service
 
 ### Prerequisites
 
-* Go 1.18.x or newer
+* Go 1.18.x or newer - Installation guide [here](../../../guides/installation/install-golang.md).
+* JSON processor ja - sudo apt install jq
 
 ### Build Kujira Node
 

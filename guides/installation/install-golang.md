@@ -1,5 +1,9 @@
 # Install Golang
 
+{% embed url="https://odysee.com/@ChainToolsAcademy:b/GolangInstall:c" %}
+Video demonstrates steps described below.
+{% endembed %}
+
 ### Download and extract repository
 
 #### AMD and Intel compatible processors

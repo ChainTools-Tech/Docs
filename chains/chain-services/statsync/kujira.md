@@ -1,5 +1,5 @@
 ---
-description: Build and synchronise node from state-sync service
+description: Build and synchronize node from state-sync service
 ---
 
 # Kujira
@@ -60,7 +60,7 @@ kujirad start
 
 Once snapshot will be identified and accepted you will see following information in node logs:
 
-```
+```bash
 5:07PM INF Snapshot accepted, restoring format=1 hash="�NU\t���B���T�\x1082�g��H��.�#�\x18>n�\x1d" height=2085000 module=statesync
 5:07PM INF Fetching snapshot chunk chunk=0 format=1 height=2085000 module=statesync total=16
 5:07PM INF Fetching snapshot chunk chunk=2 format=1 height=2085000 module=statesync total=16

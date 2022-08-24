@@ -33,4 +33,5 @@
   * [Peers & Seeds](chain-services/peers-and-seeds.md)
   * [Endpoints](chain-services/network-endpoints.md)
   * [State-Sync](chain-services/statsync/README.md)
+    * [BitSong](chains/chain-services/statsync/bitsong.md)
     * [Kujira](chains/chain-services/statsync/kujira.md)

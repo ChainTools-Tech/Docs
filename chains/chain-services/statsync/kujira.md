@@ -27,7 +27,6 @@ make install
 
 ```bash
 kujirad init myNode --chain-id kaiyo-1
-rm ${HOME}/.kujira/config/addrbook.json && rm ${HOME}/.kujira/config/genesis.json
 wget -O ${HOME}/.kujira/config/addrbook.json https://files.chaintools.tech/chains/kujira/addrbook.json
 wget -O ${HOME}/.kujira/config/genesis.json https://raw.githubusercontent.com/Team-Kujira/networks/master/mainnet/kaiyo-1.json
 ```

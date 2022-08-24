@@ -58,7 +58,9 @@ bitsongd start
 
 
 
-**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot. Once snapshot will be identified and accepted you will see following information in node logs:
+**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.&#x20;
+
+Once snapshot will be identified and accepted you will see following information in node logs:
 
 ```bash
 12:35PM INF Discovering snapshots for 15s module=statesync

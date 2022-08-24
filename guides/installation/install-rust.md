@@ -2,6 +2,10 @@
 
 
 
+{% embed url="https://odysee.com/@ChainToolsAcademy:b/RustInstall:e" %}
+Video demonstrates steps described below.
+{% endembed %}
+
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```

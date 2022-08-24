@@ -11,6 +11,10 @@ description: Build and synchronize node from state-sync service
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudoapt install build-essential`
 
+{% embed url="https://odysee.com/@ChainToolsAcademy:b/StateSyncBitSong:d" %}
+Video demonstrates steps described below.
+{% endembed %}
+
 ### Build BitSong Node
 
 ```bash

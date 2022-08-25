@@ -9,7 +9,7 @@ description: Build and synchronize node from state-sync service
 * Ubuntu 20.04 LTS or newer
 * Go 1.18.x or newer - Installation guide [here](../../../guides/installation/install-golang.md).
 * JSON processor jq - `sudo apt install jq`
-* Essential Build Tools - `sudoapt install build-essential`
+* Essential Build Tools - `sudo apt install build-essential`
 
 {% embed url="https://odysee.com/@ChainToolsAcademy:b/StateSyncKujira:6" %}
 Video demonstrates steps described below.

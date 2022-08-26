@@ -34,4 +34,5 @@
   * [Endpoints](chain-services/network-endpoints.md)
   * [State-Sync](chain-services/statsync/README.md)
     * [BitSong](chains/chain-services/statsync/bitsong.md)
+    * [Juno](chains/chain-services/statsync/juno.md)
     * [Kujira](chains/chain-services/statsync/kujira.md)

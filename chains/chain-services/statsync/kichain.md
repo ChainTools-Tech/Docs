@@ -11,6 +11,10 @@ description: Build and synchronize node from state-sync service
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
+{% embed url="https://odysee.com/@ChainToolsAcademy:b/StateSyncKiChain:3" %}
+Video demonstrates steps described below.
+{% endembed %}
+
 ### Build KiChain Node
 
 ```bash

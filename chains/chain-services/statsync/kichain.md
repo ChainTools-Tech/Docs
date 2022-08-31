@@ -1,3 +1,7 @@
+---
+description: Build and synchronize node from state-sync service
+---
+
 # KiChain
 
 ### Prerequisites

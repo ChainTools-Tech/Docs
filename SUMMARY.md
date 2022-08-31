@@ -6,7 +6,7 @@
   * [Install Golang](guides/installation/install-golang.md)
   * [Install Rust](guides/installation/install-rust.md)
   * [Install Cosmovisor](guides/installation/install-cosmovisor.md)
-  * [Backup Server](guides/installation/backup-server.md)
+  * [Backup Server](readme/big-backup-server-guide.md)
 * [Services](guides/services/README.md)
   * [Systemd Service Template](guides/services/systemd-service-template.md)
   * [Configure journalctl](guides/services/configure-journalctl.md)
@@ -37,3 +37,4 @@
     * [BitSong](chains/chain-services/statsync/bitsong.md)
     * [Juno](chains/chain-services/statsync/juno.md)
     * [Kujira](chains/chain-services/statsync/kujira.md)
+    * [KiChain](chains/chain-services/statsync/kichain.md)

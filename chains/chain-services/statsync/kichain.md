@@ -19,7 +19,7 @@ git checkout 3.0.0
 make install
 ```
 
-### Initialize BitSong Node
+### Initialize KiChain Node
 
 ```bash
 kid init myNode --chain-id kichain-2

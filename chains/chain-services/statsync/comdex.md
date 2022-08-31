@@ -19,7 +19,7 @@ git checkout v0.1.1
 make install
 ```
 
-### Initialize BitSong Node
+### Initialize Comdex Node
 
 ```bash
 comdex init myNode --chain-id comdex-1

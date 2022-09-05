@@ -6,6 +6,7 @@
 cd ${HOME}
 git clone https://github.com/cosmos/cosmos-sdk && cd cosmos-sdk/cosmovisor/
 make
+sudo cp cosmovisor /usr/local/bin
 ```
 
 ### Service file template

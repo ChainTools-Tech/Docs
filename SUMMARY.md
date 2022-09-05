@@ -27,6 +27,7 @@
   * [State-Sync](chain-services/statsync/README.md)
     * [BitSong](chains/chain-services/statsync/bitsong.md)
     * [Comdex](chains/chain-services/statsync/comdex.md)
+    * [Evmos](chains/chain-services/statsync/evmos.md)
     * [Juno](chains/chain-services/statsync/juno.md)
     * [KiChain](chains/chain-services/statsync/kichain.md)
     * [Kujira](chains/chain-services/statsync/kujira.md)

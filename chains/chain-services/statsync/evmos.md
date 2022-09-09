@@ -15,7 +15,7 @@ description: Build and synchronize node from state-sync service
 
 ```bash
 git clone https://github.com/evmos/evmos && cd evmos
-git checkout v8.0.0
+git checkout v7.0.0
 make install
 ```
 

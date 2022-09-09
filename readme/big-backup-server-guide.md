@@ -466,7 +466,7 @@ After=network-online.target
 [Service]
 User=comdex
 Group=comdex
-ExecStart=/home/chihuahua/.comdex/bin/cosmovisor run start
+ExecStart=/home/user/.local/bin/cosmovisor run start
 Restart=always
 RestartSec=3
 LimitNOFILE=4096

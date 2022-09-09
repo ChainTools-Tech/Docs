@@ -7,7 +7,6 @@
   * [Install Rust](guides/installation/install-rust.md)
   * [Install Cosmovisor](guides/installation/install-cosmovisor.md)
   * [Backup Server](readme/big-backup-server-guide.md)
-  * [Untitled](guides/installation/untitled.md)
 * [Services](guides/services/README.md)
   * [Node Monitoring](guides/services/node-monitoring/README.md)
     * [Panic Cosmos](guides/services/node-monitoring/panic-cosmos.md)

@@ -30,3 +30,7 @@
     * [Juno](chains/chain-services/statsync/juno.md)
     * [KiChain](chains/chain-services/statsync/kichain.md)
     * [Kujira](chains/chain-services/statsync/kujira.md)
+
+## Snippets
+
+* [Python gRPC](snippets/python-grpc.md)

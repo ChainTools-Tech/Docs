@@ -1,5 +1,7 @@
 # Python gRPC
 
+Code snippet, which lists all services and methods using reflection of gRPC service.
+
 ```python
 import grpc
 

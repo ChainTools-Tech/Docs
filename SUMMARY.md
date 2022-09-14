@@ -24,13 +24,16 @@
   * [Peers & Seeds](chain-services/peers-and-seeds.md)
   * [Endpoints](chain-services/network-endpoints.md)
   * [State-Sync](chain-services/statsync/README.md)
-    * [BitSong](chains/chain-services/statsync/bitsong.md)
-    * [Comdex](chains/chain-services/statsync/comdex.md)
-    * [Evmos](chains/chain-services/statsync/evmos.md)
-    * [Juno](chains/chain-services/statsync/juno.md)
-    * [KiChain](chains/chain-services/statsync/kichain.md)
-    * [Kujira](chains/chain-services/statsync/kujira.md)
-    * [Rizon](chains/chain-services/statsync/rizon.md)
+    * [Mainnets](chains/chain-services/statsync/mainnets/README.md)
+      * [BitSong](chains/chain-services/statsync/mainnets/bitsong.md)
+      * [Evmos](chains/chain-services/statsync/mainnets/evmos.md)
+      * [Comdex](chains/chain-services/statsync/mainnets/comdex.md)
+      * [Juno](chains/chain-services/statsync/mainnets/juno.md)
+      * [KiChain](chains/chain-services/statsync/mainnets/kichain.md)
+      * [Kujira](chains/chain-services/statsync/mainnets/kujira.md)
+      * [Rizon](chains/chain-services/statsync/mainnets/rizon.md)
+    * [Testnets](chains/chain-services/statsync/testnets/README.md)
+      * [Uni - Juno Testnet](chains/chain-services/statsync/testnets/uni-juno-testnet.md)
 
 ## Snippets
 

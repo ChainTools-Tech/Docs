@@ -2,40 +2,36 @@
 description: Build and synchronize node from state-sync service
 ---
 
-# Rizon
+# Uni - Juno Testnet
 
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
-* Go 1.18.x or newer - Installation guide [here](../../../guides/installation/install-golang.md).
+* Go 1.18.x or newer - Installation guide [here](../../../../guides/installation/install-golang.md).
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
-{% embed url="https://odysee.com/@ChainToolsAcademy:b/StateSyncRizon:9" %}
-Video demonstrates steps described below.
-{% endembed %}
-
-### Build Rizon Node
+### Build Juno Node
 
 ```bash
-git clone https://github.com/rizon-world/rizon.git && cd rizon
-git checkout v0.3.0
+git clone https://github.com/CosmosContracts/juno && cd juno
+git checkout v10.0.0-alpha
 make install
 ```
 
-### Initialize Rizon Node
+### Initialize Juno Node
 
 ```bash
-rizond init myNode --chain-id titan-1
-wget -O ${HOME}/.rizon/config/addrbook.json https://files.chaintools.tech/chains/rizon/addrbook.json
-wget -O ${HOME}/.rizon/config/genesis.json https://github.com/rizon-world/mainnet/raw/master/genesis.json
+junod init myNode --chain-id uni-3
+wget -O ${HOME}/.juno/config/addrbook.json https://files.chaintools.tech/chains/uni/addrbook.json
+wget -O ${HOME}/.juno/config/genesis.json https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-3/genesis.json
 ```
 
 ### Configure state-sync
 
 ```bash
-SNAP_RPC="https://rpc.rizon.chaintools.tech:443"
-SNAP_RPC2="https://rpc.rizon.chaintools.tech:443"
+SNAP_RPC="https://rpc.uni.chaintools.tech:443"
+SNAP_RPC2="https://rpc.uni.chaintools.tech:443"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
@@ -47,11 +43,11 @@ sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
 s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC2\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.rizon/config/config.toml
+s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.juno/config/config.toml
 ```
 
-### Start Rizon Node
+### Start Juno Node
 
 ```
-rizond start
+junod start
 ```

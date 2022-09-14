@@ -15,7 +15,7 @@ installimage
 1. once you select ubuntu there will be blue screen with some disk configs this is important .. we have to make some changes there
 2. select ubuntu 2004 3rd one
 
-![](../../.gitbook/assets/ubuntu.png)
+![](../../../.gitbook/assets/ubuntu.png)
 
 ```javascript
 config files by commenting out DRIVE3 DRIVE4 by using # 
@@ -40,7 +40,7 @@ mount
 
 ```
 
-![](../../.gitbook/assets/mount.png)
+![](../../../.gitbook/assets/mount.png)
 
 ```javascript
 reboot
@@ -423,7 +423,7 @@ sed -i "s/prometheus_listen_addr = \\":26660\\"/prometheus_listen_addr = \\":267
 sed -i "s/pprof_laddr = \\"localhost:6060\\"/pprof_laddr = \\"localhost:6160\\"/g" config.toml
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-08-31 at 09.13.06.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-31 at 09.13.06.png" alt=""><figcaption></figcaption></figure>
 
 You can check all ports and which process uses which port
 

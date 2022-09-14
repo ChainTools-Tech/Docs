@@ -2,17 +2,18 @@
 
 ## Home
 
-* [Installation](README.md)
-  * [Install Golang](home/installation/install-golang.md)
-  * [Install Rust](home/installation/install-rust.md)
-  * [Install Cosmovisor](home/installation/install-cosmovisor.md)
-  * [Backup Server](home/installation/backup-server.md)
-* [Services](home/services/README.md)
-  * [Node Monitoring](home/services/node-monitoring/README.md)
-    * [Panic Cosmos](home/services/node-monitoring/panic-cosmos.md)
-  * [Systemd Service Template](home/services/systemd-service-template.md)
-  * [Configure journalctl](home/services/configure-journalctl.md)
-  * [Caddy Web Server/Proxy](home/services/caddy-web-server-proxy.md)
+* [Guides](README.md)
+  * [Installation Guides](home/guides/installation-guides/README.md)
+    * [Install Golang](home/guides/installation-guides/install-golang.md)
+    * [Install Rust](home/guides/installation-guides/install-rust.md)
+    * [Install Cosmovisor](home/guides/installation-guides/install-cosmovisor.md)
+    * [Backup Server](home/guides/installation-guides/backup-server.md)
+  * [Tooling Guides](home/guides/tooling-guides/README.md)
+    * [Node Monitoring](home/guides/tooling-guides/node-monitoring/README.md)
+      * [Panic Cosmos](home/guides/tooling-guides/node-monitoring/panic-cosmos.md)
+    * [Systemd Service Template](home/guides/tooling-guides/systemd-service-template.md)
+    * [Configure journalctl](home/guides/tooling-guides/configure-journalctl.md)
+    * [Caddy Web Server/Proxy](home/guides/tooling-guides/caddy-web-server-proxy.md)
 
 ## Chains
 

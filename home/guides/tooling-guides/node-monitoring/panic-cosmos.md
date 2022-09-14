@@ -123,7 +123,7 @@ Edit the `user_config_nodes.ini` file now.&#x20;
 
 This is where you can add the node you wish to get alerts for. Multiple nodes can be added here. For example.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-08-31 at 15.01.11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2022-08-31 at 15.01.11.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you are not intending to run sentries for your validator nodes then you need to add the same \<NODE\_RPC\_IP> and set the other to `validator=false` so you have two nodes being queried.

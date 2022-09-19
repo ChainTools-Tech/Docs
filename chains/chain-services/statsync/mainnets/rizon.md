@@ -19,7 +19,7 @@ Video demonstrates steps described below.
 
 ```bash
 git clone https://github.com/rizon-world/rizon.git && cd rizon
-git checkout v0.3.0
+git checkout v0.4.0
 make install
 ```
 

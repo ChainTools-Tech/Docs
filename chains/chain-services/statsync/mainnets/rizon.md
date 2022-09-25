@@ -25,17 +25,14 @@ make install
 
 ### Initialize Rizon Node
 
-```bash
-rizond init myNode --chain-id titan-1
-wget -O ${HOME}/.rizon/config/addrbook.json https://files.chaintools.tech/chains/rizon/addrbook.json
-wget -O ${HOME}/.rizon/config/genesis.json https://github.com/rizon-world/mainnet/raw/master/genesis.json
-```
+<pre class="language-bash"><code class="lang-bash">rizond init myNode --chain-id titan-1
+<strong>wget -O ${HOME}/.rizon/config/addrbook.json https://files.chaintools.tech/chains/rizon/addrbook.json
+</strong>wget -O ${HOME}/.rizon/config/genesis.json https://github.com/rizon-world/mainnet/raw/master/genesis.json</code></pre>
 
 ### Configure state-sync
 
-```bash
-SNAP_RPC="https://rpc.rizon.chaintools.tech:443"
-SNAP_RPC2="https://rpc.rizon.chaintools.tech:443"
+<pre class="language-bash"><code class="lang-bash"><strong>SNAP_RPC="https://rpc.rizon.chaintools.tech:443"
+</strong>SNAP_RPC2="https://rpc.rizon.chaintools.tech:443"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
@@ -47,8 +44,7 @@ sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
 s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC2\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.rizon/config/config.toml
-```
+s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.rizon/config/config.toml</code></pre>
 
 ### Start Rizon Node
 

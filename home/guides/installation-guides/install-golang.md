@@ -35,7 +35,7 @@ That can be placed in `${HOME}/.profile` or `${HOME}/.bashrc` or any other shell
 if [ -f "/usr/local/go/bin/go" ] ; then
     export GOROOT=/usr/local/go
     export GOPATH=${HOME}/go
-    export GOBIN=$GOPATH/bin
+    export GOBIN=${GOPATH}/bin
     export PATH=${PATH}:${GOROOT}/bin:${GOBIN}
 fi
 ```

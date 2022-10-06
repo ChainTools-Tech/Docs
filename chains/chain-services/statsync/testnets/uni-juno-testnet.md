@@ -53,5 +53,5 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.juno/config/config.toml
 ### Start Omniflixhub Node
 
 ```
-omniflixhubd start
+junod start
 ```

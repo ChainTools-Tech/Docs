@@ -49,6 +49,6 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" /home/flixnet-4/.omniflixhub/con
 ### Start Omniflixhub
 
 ```javascript
-omniflixhubd startv
+omniflixhubd start
 ```
 

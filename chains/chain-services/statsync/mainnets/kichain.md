@@ -19,7 +19,7 @@ Video demonstrates steps described below.
 
 ```bash
 git clone https://github.com/KiFoundation/ki-tools.git && cd ki-tools
-git checkout 3.0.0
+git checkout Mainnet-4.0.0
 make install
 ```
 

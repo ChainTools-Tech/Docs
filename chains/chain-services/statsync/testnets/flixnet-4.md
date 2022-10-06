@@ -46,3 +46,7 @@ s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" /home/flixnet-4/.omniflixhub/config/config.toml
 ```
 
+### Start Omniflixhub
+
+
+

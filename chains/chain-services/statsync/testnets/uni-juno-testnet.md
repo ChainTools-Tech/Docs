@@ -50,8 +50,8 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.juno/config/config.toml
 
 `ac9dd6db1d34c15b1de212b0c0c240615bfc2941@207.180.243.215:26656,f7d12b08210b7b759f65e381782d62b556598000@127.0.0.2:26656`&#x20;
 
-### Start Juno Node
+### Start Omniflixhub Node
 
 ```
-junod start
+omniflixhubd start
 ```

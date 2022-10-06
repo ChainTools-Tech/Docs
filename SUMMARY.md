@@ -35,6 +35,7 @@
       * [Kujira](chains/chain-services/statsync/mainnets/kujira.md)
       * [Rizon](chains/chain-services/statsync/mainnets/rizon.md)
     * [Testnets](chains/chain-services/statsync/testnets/README.md)
+      * [Flixnet-4](chains/chain-services/statsync/testnets/flixnet-4.md)
       * [Uni - Juno Testnet](chains/chain-services/statsync/testnets/uni-juno-testnet.md)
 
 ## Snippets

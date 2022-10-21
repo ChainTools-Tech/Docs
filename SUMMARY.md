@@ -31,6 +31,7 @@
       * [Comdex](chains/chain-services/statsync/mainnets/comdex.md)
       * [Omniflix](chains/chain-services/statsync/mainnets/omniflix.md)
       * [Juno](chains/chain-services/statsync/mainnets/juno.md)
+      * [Cosmos](chains/chain-services/statsync/mainnets/cosmos.md)
       * [KiChain](chains/chain-services/statsync/mainnets/kichain.md)
       * [Kujira](chains/chain-services/statsync/mainnets/kujira.md)
       * [Rizon](chains/chain-services/statsync/mainnets/rizon.md)

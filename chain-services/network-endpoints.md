@@ -6,6 +6,7 @@
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | BitSong    | [RPC](https://rpc.bitsong.chaintools.tech), GRPC, [API](https://api.bitsong.chaintools.tech)                                            |
 | Comdex     | [RPC](https://rpc.comdex.chaintools.tech), [GRPC](https://grpc.comdex.chaintools.tech), [API](https://api.comdex.chaintools.tech)       |
+| Cosmos     | [RPC](http://rpc.cosmos.chiantools.tech/), [GRPC](http://grpc.cosmos.chiantools.tech/),[ API](http://api.cosmos.chiantools.tech/)       |
 | Decentr    | [RPC](https://rpc.decentr.chaintools.tech), GRPC, [API](https://api.decentr.chaintools.tech)                                            |
 | Evmos      | [RPC](https://rpc.evmos.chaintools.tech), [GRPC](https://grpc.evmos.chaintools.tech), [API](https://api.evmos.chaintools.tech)          |
 | FirmaChain | [RPC](https://rpc.firmachain.chaintools.tech), GRPC, [API](https://api.firmachain.chaintools.tech)                                      |

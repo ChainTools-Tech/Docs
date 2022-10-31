@@ -19,7 +19,7 @@ Video demonstrates steps described below.
 
 ```bash
 git clone https://github.com/Team-Kujira/core && cd core
-git checkout v0.5.0
+git checkout v0.6.3
 make install
 ```
 

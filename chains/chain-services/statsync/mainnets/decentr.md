@@ -22,7 +22,7 @@ make install</code></pre>
 ```bash
 decentrd init myNode --chain-id mainnet-3
 wget -O ${HOME}/.decentr/config/addrbook.json https://files.chaintools.tech/chains/decentr/addrbook.json
-wget -O $HOME/.decentr/config/genesis.json https://raw.githubusercontent.com/Decentr-net/mainnets/master/3.0/genesis.json
+wget -O ${HOME}/.decentr/config/genesis.json https://raw.githubusercontent.com/Decentr-net/mainnets/master/3.0/genesis.json
 ```
 
 ### Add Seed Nodes to config

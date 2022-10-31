@@ -63,8 +63,3 @@ decentrd start
 
 
 **NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.&#x20;
-
-Once snapshot will be identified and accepted you will see following information in node logs:
-
-```bash
-```

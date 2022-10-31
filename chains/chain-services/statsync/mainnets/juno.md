@@ -19,7 +19,7 @@ Video demonstrates steps described below.
 
 ```bash
 git clone https://github.com/CosmosContracts/juno && cd juno
-git checkout v9.0.0
+git checkout v11.0.0
 make install
 ```
 

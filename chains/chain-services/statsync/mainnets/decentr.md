@@ -21,6 +21,7 @@ make install</code></pre>
 
 ```bash
 decentrd init myNode --chain-id mainnet-3
+wget -O ${HOME}/.decentr/config/addrbook.json https://files.chaintools.tech/chains/decentr/addrbook.json
 wget -O $HOME/.decentr/config/genesis.json https://raw.githubusercontent.com/Decentr-net/mainnets/master/3.0/genesis.json
 ```
 
@@ -37,7 +38,7 @@ SNAP_RPC="http://75.119.157.167:28657"
 SNAP_RPC2="http://75.119.157.167:28657"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
-BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
+BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
 TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
 
 echo $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH

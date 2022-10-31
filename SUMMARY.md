@@ -27,6 +27,7 @@
   * [State-Sync](chain-services/statsync/README.md)
     * [Mainnets](chains/chain-services/statsync/mainnets/README.md)
       * [BitSong](chains/chain-services/statsync/mainnets/bitsong.md)
+      * [Decentr](chains/chain-services/statsync/mainnets/decentr.md)
       * [Evmos](chains/chain-services/statsync/mainnets/evmos.md)
       * [Comdex](chains/chain-services/statsync/mainnets/comdex.md)
       * [Omniflix](chains/chain-services/statsync/mainnets/omniflix.md)

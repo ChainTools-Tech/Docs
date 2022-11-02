@@ -3,7 +3,7 @@
 ### Build Cosmovisor
 
 <pre class="language-bash"><code class="lang-bash">cd ${HOME}
-<strong>git clone https://github.com/cosmos/cosmos-sdk &#x26;&#x26; cd cosmos-sdk/cosmovisor/
+<strong>git clone https://github.com/cosmos/cosmos-sdk &#x26;&#x26; cd cosmos-sdk/tools/cosmovisor/
 </strong>make
 sudo cp cosmovisor /usr/local/bin</code></pre>
 

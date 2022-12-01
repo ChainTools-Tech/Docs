@@ -19,7 +19,7 @@ Video demonstrates steps described below.
 
 ```bash
 git clone https://github.com/rizon-world/rizon.git && cd rizon
-git checkout v0.4.0
+git checkout v0.4.1
 make install
 ```
 
@@ -27,7 +27,8 @@ make install
 
 <pre class="language-bash"><code class="lang-bash">rizond init myNode --chain-id titan-1
 <strong>wget -O ${HOME}/.rizon/config/addrbook.json https://files.chaintools.tech/chains/rizon/addrbook.json
-</strong>wget -O ${HOME}/.rizon/config/genesis.json https://github.com/rizon-world/mainnet/raw/master/genesis.json</code></pre>
+</strong>wget -O ${HOME}/.rizon/config/genesis.json https://github.com/rizon-world/mainnet/raw/master/genesis.json
+</code></pre>
 
 ### Configure state-sync
 
@@ -44,7 +45,8 @@ sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
 s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC2\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.rizon/config/config.toml</code></pre>
+s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.rizon/config/config.toml
+</code></pre>
 
 ### Start Rizon Node
 

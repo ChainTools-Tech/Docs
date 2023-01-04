@@ -43,3 +43,4 @@
 ## Snippets
 
 * [Python gRPC](snippets/python-grpc.md)
+* [Handy commands](snippets/handy-commands.md)

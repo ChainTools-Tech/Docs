@@ -15,7 +15,7 @@ curl -s http://localhost:26657/dump_consensus_state | jq '.result.round_state.vo
 ### Validator list
 
 ```bash
-./gaiad q staking validators  --node http://localhost:26657 -o json --limit=1000 | jq '.validators[]' | jq -r '.tokens + " - " + .status + " - " +  .description.moniker + " - " + .operator_address' | sort -gr | nl
+gaiad q staking validators  --node http://localhost:26657 -o json --limit=1000 | jq '.validators[]' | jq -r '.tokens + " - " + .status + " - " +  .description.moniker + " - " + .operator_address' | sort -gr | nl
 ```
 
 ### Number of connected peers

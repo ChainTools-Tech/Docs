@@ -19,7 +19,7 @@ Video demonstrates steps described below.
 
 ```bash
 git clone https://github.com/comdex-official/comdex && cd comdex
-git checkout v7.0.0
+git checkout v0.1.3
 make install
 ```
 

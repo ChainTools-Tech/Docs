@@ -2,14 +2,7 @@
 
 Setup demonstrates how to setup Hermes relayer and configure it to relay assets between LumenX and Osmosis chains.
 
-* Pre-requisites
-  * Create user account
-  * Required packages
-  * Rust installation
-* Relayer build & installation
-* Hermes configuration
-* Add relayer keys
-* Create and start Hermes service
+
 
 ### Pre-requisites
 

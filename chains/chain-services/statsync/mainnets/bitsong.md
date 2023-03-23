@@ -19,7 +19,7 @@ Video demonstrates steps described below.
 
 ```bash
 git clone https://github.com/bitsongofficial/go-bitsong && cd go-bitsong
-git checkout v0.12.0
+git checkout v0.14.0
 make install
 ```
 

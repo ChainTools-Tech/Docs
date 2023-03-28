@@ -7,7 +7,7 @@ description: Build and synchronize node from state-sync service
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
-* Go 1.18.x or newer - Installation guide [here](../../../../home/guides/installation-guides/install-golang.md).
+* Go 1.18.x or newer - Installation guide [here](../../home/installation-guides/install-golang.md).
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
@@ -15,7 +15,7 @@ description: Build and synchronize node from state-sync service
 
 ```bash
 git clone https://github.com/evmos/evmos && cd evmos
-git checkout v9.1.0
+git checkout v11.0.1
 make install
 ```
 

@@ -7,7 +7,7 @@ description: Build and synchronize node from state-sync service
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
-* Go 1.18.x or newer - Installation guide [here](../../../../home/guides/installation-guides/install-golang.md).
+* Go 1.18.x or newer - Installation guide [here](../../home/installation-guides/install-golang.md).
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
@@ -15,7 +15,8 @@ description: Build and synchronize node from state-sync service
 
 <pre class="language-bash"><code class="lang-bash"><strong>git clone https://github.com/cosmos/gaia &#x26;&#x26; cd gaia
 </strong><strong>git checkout v7.1.0
-</strong><strong>make install</strong></code></pre>
+</strong><strong>make install
+</strong></code></pre>
 
 ### Initialize Cosmos Node
 
@@ -42,7 +43,7 @@ sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
 s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC2\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.cosmos/config/config.toml
+s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.gaia/config/config.toml
 ```
 
 ### Start Cosmos Node

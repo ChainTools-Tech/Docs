@@ -212,7 +212,8 @@ wget <https://golang.org/dl/${GOVER}.linux-amd64.tar.gz>
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-amd64.tar.gz
 ```
 
-<pre class="language-javascript"><code class="lang-javascript"><strong>adduser comdex </strong></code></pre>
+<pre class="language-javascript"><code class="lang-javascript"><strong>adduser comdex 
+</strong></code></pre>
 
 
 

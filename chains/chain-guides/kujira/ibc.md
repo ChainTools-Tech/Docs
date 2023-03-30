@@ -18,7 +18,8 @@ kujirad query ibc-transfer denom-trace 004EBF085BBED1029326D56BE8A2E67C08CECE670
 
 ///will show 
 
-denom_trace: base_denom: wavax-wei path: transfer/channel-9</code></pre>
+denom_trace: base_denom: wavax-wei path: transfer/channel-9
+</code></pre>
 
 
 

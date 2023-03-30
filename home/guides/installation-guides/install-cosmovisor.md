@@ -5,7 +5,8 @@
 <pre class="language-bash"><code class="lang-bash">cd ${HOME}
 <strong>git clone https://github.com/cosmos/cosmos-sdk &#x26;&#x26; cd cosmos-sdk/tools/cosmovisor/
 </strong>make
-sudo cp cosmovisor /usr/local/bin</code></pre>
+sudo cp cosmovisor /usr/local/bin
+</code></pre>
 
 #### For MultiNode set ups you can do the following&#x20;
 

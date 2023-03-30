@@ -2,36 +2,36 @@
 description: Build and synchronize node from state-sync service
 ---
 
-# Cosmos
+# Nois\_Network
 
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
-* Go 1.18.x or newer - Installation guide [here](../../../../home/guides/installation-guides/install-golang.md).
+* Go 1.18.x or newer - Installation guide [here](../../home/installation-guides/install-golang.md).
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
-### Build Juno Node
+### Build Nois Node
 
-<pre class="language-bash"><code class="lang-bash"><strong>git clone https://github.com/cosmos/gaia &#x26;&#x26; cd gaia
-</strong><strong>git checkout v7.1.0
+<pre class="language-bash"><code class="lang-bash">git clone https://github.com/noislabs/networks.git
+<strong>git checkout v1.0.0
 </strong><strong>make install
 </strong></code></pre>
 
-### Initialize Cosmos Node
+### Initialize Nois Node
 
 ```bash
-gaiad init myNode --chain-id cosmoshub-4
-wget -O ${HOME}/.gaia/config/addrbook.json https://files.chaintools.tech/chains/cosmos/addrbook.json
-wget -O ${HOME}/.gaia/config/genesis.json https://files.chaintools.tech/chains/cosmos/genesis.json.gz
-rm ${HOME}/.gaia/config/genesis.json && gzip -d ${HOME}/.gaia/config/genesis.json.gz
+gaiad init myNode --chain-id nois-1
+wget -O ${HOME}/.noisd/config/addrbook.json https://files.chaintools.tech/chains/nois/addrbook.json
+wget -O ${HOME}/.noisd/config/genesis.json https://files.chaintools.tech/chains/nois/genesis.json.gz
+rm ${HOME}/.noisd/config/genesis.json && gzip -d ${HOME}/.noisd/config/genesis.json.gz
 ```
 
 ### Configure state-sync
 
 ```bash
-SNAP_RPC="https://rpc.cosmos.chaintools.tech:443"
-SNAP_RPC2="https://rpc.cosmos.chaintools.tech:443"
+SNAP_RPC="https://rpc.nois.chaintools.tech:443"
+SNAP_RPC2="https://rpc.nois.chaintools.tech:443"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
@@ -43,11 +43,11 @@ sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
 s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC2\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.gaia/config/config.toml
+s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.noisd/config/config.toml
 ```
 
-### Start Cosmos Node
+### Start Nois Node
 
 ```
-cosmos start
+noisd start
 ```

@@ -12,7 +12,17 @@ Query your own PEER
 echo $(junod tendermint show-node-id)@$(curl -4 ifconfig.co):26656
 ```
 
+{% hint style="info" %}
+Add peers or seeds with `sed`
+{% endhint %}
 
+```bash
+SEEDS=<    >
+```
+
+```bash
+sed -i "s/^\(seeds *= *\).*$/\1$SEEDS/" config.toml
+```
 
 {% hint style="info" %}
 Query connected peers on your network&#x20;

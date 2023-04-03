@@ -17,4 +17,5 @@
 | Rizon      | [RPC](https://rpc.rizon.chaintools.tech), GRPC, [API](https://api.rizon.chaintools.tech)                                                   |
 | Sentinel   | [RPC](https://rpc.sentinel.chaintools.tech), [GRPC](https://sentinel.grpcui.chaintools.host/), [API](https://api.sentinel.chaintools.tech) |
 | SifChain   | [RPC](https://rpc.sifchain.chaintools.tech), GRPC, [API](https://api.sifchain.chaintools.tech)                                             |
+| Nois       | [RPC](https://rpc.nois.chaintools.tech/), [GRPC](https://nois.grpcui.chaintools.host/), [API](https://api.nois.chaintools.tech/)           |
 

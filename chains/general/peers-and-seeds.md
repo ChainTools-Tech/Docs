@@ -8,12 +8,20 @@ description: Here we will try our best to update peer and seeds list.
 Query your own PEER
 {% endhint %}
 
+{% hint style="info" %}
+Set external P2P address
+{% endhint %}
+
+```bash
+sed -i "/^external_address = .*/ s//external_address = \"${ADDRESS:="$(curl -fsSL https://ifconfig.me):${PORT:=26656}"}\"/" $HOME/.chaind/config/config.toml
+```
+
 ```javascript
 echo $(junod tendermint show-node-id)@$(curl -4 ifconfig.co):26656
 ```
 
 {% hint style="info" %}
-Add peers or seeds with `sed`
+Add seeds with `sed`
 {% endhint %}
 
 ```bash

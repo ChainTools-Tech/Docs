@@ -33,6 +33,7 @@
   * [KiChain](chains/mainnets/kichain.md)
   * [Omniflix](chains/mainnets/omniflix.md)
   * [Rizon](chains/mainnets/rizon.md)
+  * [Validator bootstrap commands](chains/mainnets/validator-bootstrap-commands.md)
 * [Testnets](chains/testnets/README.md)
   * [Flixnet-4](chains/testnets/flixnet-4.md)
   * [Uni - Juno Testnet](chains/testnets/uni-juno-testnet.md)

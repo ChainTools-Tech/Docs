@@ -46,7 +46,7 @@ s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.juno/config/config.toml
 ```
 
-**Add these two PEERS to your `config.toml` **&#x20;
+**Add these two PEERS to your `config.toml`**&#x20;
 
 `ac9dd6db1d34c15b1de212b0c0c240615bfc2941@207.180.243.215:26656,f7d12b08210b7b759f65e381782d62b556598000@127.0.0.2:26656`&#x20;
 

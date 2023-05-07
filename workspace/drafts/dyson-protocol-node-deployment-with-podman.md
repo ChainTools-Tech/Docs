@@ -66,7 +66,9 @@ cd dyson-deploy
 
 ### Configurartion adjustments
 
-To build and run containers we will use `docker-compose`. As Podman does not support `docker compose` syntax it is required to adju **Changes to `Makefile`**
+To build and run containers we will use `docker-compose`. As Podman does not support `docker compose` syntax it is required to adjust some configuration files in order to get composer to work.
+
+**Changes to `Makefile`**
 
 * replace `docker compose` with `docker-compose`
 

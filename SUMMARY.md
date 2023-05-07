@@ -42,3 +42,8 @@
 
 * [Python gRPC](snippets/python-grpc.md)
 * [Handy commands](snippets/handy-commands.md)
+
+## Workspace
+
+* [Drafts](workspace/drafts/README.md)
+  * [Dyson Protocol Node Deployment with Podman](workspace/drafts/dyson-protocol-node-deployment-with-podman.md)

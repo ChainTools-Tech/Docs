@@ -22,19 +22,21 @@ Docker and Podman are both containerization platforms that enable developers to 
 
 In summary, Docker and Podman are both powerful containerization tools, but they differ in their architecture, security features, and some aspects of their functionality. Podman is an appealing alternative for those who prioritize rootless container management and a daemonless architecture, while Docker remains popular for its extensive community, support, and integration with Docker Swarm.
 
-### Update system
+### Podman deployment/configuration
+
+#### Update system
 
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 ```
 
-### Required packages
+#### Required packages
 
 ```bash
 sudo apt install entr jq make git ufw podman podman-docker docker-compose
 ```
 
-### Create Dyson node user
+#### Create Dyson node user
 
 ```bash
 sudo adduser dyson
@@ -42,7 +44,7 @@ sudo adduser dyson
 
 Once dedicated user is created access system using `dyson` user to continue deployment.
 
-### Enable and start podman.socket as a user
+#### Enable and start podman.socket as a user
 
 ```bash
 systemctl --user enable podman.socket
@@ -53,22 +55,22 @@ export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
 
 **NOTE:** Commands `su - <user>` or `sudo -u <user>` do not preserve environment variables like `$DBUS_SESSION_BUS_ADDRESS` and `$XDG_RUNTIME_DIR`. It is required to use ssh to login as **dyson** user to have environmental variables set correctly for Podman: `ssh <user>@localhost`
 
-#### Prevent container termination at logoff
+#### Prevent containers termination at logoff
 
-By default container started in user environment will be terminated once user will log off. To avoid that enable linger state `sudo loginctl enable-linger`.
+By default container started in user environment will be terminated once user will log off. To avoid that enable linger state `loginctl enable-linger dyson`.
 
-### Node installation
+### Build Dyson Protocol components
+
+#### Node installation
 
 ```
 git clone --recurse-submodules https://gitlab.com/dysonproject/dyson-deploy.git
 cd dyson-deploy
 ```
 
-### Configurartion adjustments
+#### Configurartion adjustments
 
-To build and run containers we will use `docker-compose`. As Podman does not support `docker compose` syntax it is required to adjust some configuration files in order to get composer to work.
-
-**Changes to `Makefile`**
+To build and run containers we will use `docker-compose`. As Podman does not support `docker compose` syntax it is required to adju **Changes to `Makefile`**
 
 * replace `docker compose` with `docker-compose`
 
@@ -87,8 +89,26 @@ $ make reset # if you had already joined the testnet
 $ make testnet # prepare .env file for testnet deployment
 ```
 
-### Run containers
+#### Run containers
 
 ```bash
 TAG=v0.1.1 docker-compose up -d
+```
+
+That will run containers
+
+### Managing Dyson Protocol components
+
+#### Check container status
+
+```bash
+docker container logs --tail=100 --follow=true dyson-deploy_chain_1
+```
+
+#### Accessing the `dysond` service
+
+Use `docker compose exec chain bash` to enter the running container. (Ignore the warnings about blank env vars) On the host computer enter the running container
+
+```
+$ docker-compose exec chain bash
 ```

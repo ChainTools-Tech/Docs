@@ -6,6 +6,17 @@
 curl http://localhost:26657/consensus_state | jq '.result.round_state.height_vote_set[0].prevotes_bit_array'
 ```
 
+### Check to see if chain is sync
+
+```bash
+curl -s http://localhost:26657/status | jq '.result.sync_info.catching_up'
+```
+
+###
+
+```bash
+```
+
 ### Validator pre-voting status
 
 ```bash

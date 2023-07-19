@@ -33,9 +33,17 @@ sed -i "s/^\(seeds *= *\).*$/\1$SEEDS/" config.toml
 ```
 
 {% hint style="info" %}
+Query how many peers connected to your network
+{% endhint %}
+
+```bash
+curl -s http://localhost:26657/net_info | jq '.result.n_peers'
+```
+
+{% hint style="info" %}
 Query connected peers on your network&#x20;
 {% endhint %}
 
 ```javascript
-curl localhost:26657/net_info | jq '"(.result.peers[] | .node_info.id + "@" + .remote_ip)"'
+curl -s http://localhost:26657/net_info | jq '.result.peers[].node_info.id + "@" + .result.peers[].remote_ip'
 ```

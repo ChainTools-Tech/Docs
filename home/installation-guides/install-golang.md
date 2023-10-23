@@ -24,6 +24,16 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-arm64.ta
 
 **NOTE**: That will install latest version of Go
 
+
+
+**Install previous version**&#x20;
+
+```json
+GOVER=go1.20.3
+wget https://golang.org/dl/${GOVER}.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-amd64.tar.gz
+```
+
 ### Add Go environmental variables
 
 Set of variables, which should be set for user(s) with need to build Go apps.

@@ -9,8 +9,8 @@ Video demonstrates steps described below.
 #### AMD and Intel compatible processors
 
 ```bash
-GOVER=$(curl https://go.dev/VERSION?m=text)
-wget https://golang.org/dl/${GOVER}.linux-amd64.tar.gz
+GOVER=$(curl https://go.dev/VERSION?m=text | head -n 1)
+wget https://golang.org/dl/${GOVER}.linux-amd64.tar.gz && \
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-amd64.tar.gz
 ```
 

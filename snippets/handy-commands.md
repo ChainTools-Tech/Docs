@@ -12,9 +12,10 @@ curl http://localhost:26657/consensus_state | jq '.result.round_state.height_vot
 curl -s http://localhost:26657/status | jq '.result.sync_info.catching_up'
 ```
 
-###
+### Set pruning on node
 
 ```bash
+sed -i 's/^pruning = .*/pruning = "custom"/; s/^pruning-keep-recent = .*/pruning-keep-recent = "100"/; s/^pruning-keep-every = .*/pruning-keep-every = "0"/; s/^pruning-interval = .*/pruning-interval = "10"/' /home/juno/.juno/config/app.toml
 ```
 
 ### Validator pre-voting status

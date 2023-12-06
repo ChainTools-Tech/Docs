@@ -65,3 +65,10 @@ curl --location --request GET 'https://NODE_IP/node_info' -s | jq '.node_info.ne
 ```bash
 curl https://NODE_IP/genesis | jq '.result.genesis' > genesis.json
 ```
+
+### Storage&#x20;
+
+```json
+du /home/folder/
+```
+

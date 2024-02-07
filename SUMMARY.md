@@ -8,7 +8,6 @@
   * [Backup Server](home/installation-guides/backup-server.md)
   * [Install Golang](home/installation-guides/install-golang.md)
   * [Install Rust](home/installation-guides/install-rust.md)
-  * [Install](home/readme/install.md)
 * [Tooling Guides](home/tooling-guides/README.md)
   * [Node Monitoring](home/tooling-guides/node-monitoring/README.md)
     * [Panic Cosmos](home/tooling-guides/node-monitoring/panic-cosmos.md)

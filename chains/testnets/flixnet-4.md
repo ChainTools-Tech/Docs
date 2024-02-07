@@ -4,8 +4,6 @@ description: Build and synchronize node from state-sync service
 
 # Flixnet-4
 
-
-
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
@@ -51,4 +49,3 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" /home/flixnet-4/.omniflixhub/con
 ```javascript
 omniflixhubd start
 ```
-

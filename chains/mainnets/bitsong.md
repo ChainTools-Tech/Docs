@@ -56,9 +56,7 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.bitsongd/config/config.to
 bitsongd start
 ```
 
-
-
-**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.&#x20;
+**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.
 
 Once snapshot will be identified and accepted you will see following information in node logs:
 

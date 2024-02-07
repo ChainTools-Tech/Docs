@@ -2,7 +2,7 @@
 description: Build and synchronize node from state-sync service
 ---
 
-# Nois\_Network
+# Nois
 
 ### Prerequisites
 

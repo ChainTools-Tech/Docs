@@ -61,6 +61,4 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.decentr/config/config.tom
 decentrd start
 ```
 
-
-
-**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.&#x20;
+**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.

@@ -17,16 +17,14 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-amd64.ta
 #### **ARM processors**
 
 ```bash
-GOVER=$(curl https://go.dev/VERSION?m=text)
+GOVER=$(curl https://go.dev/VERSION?m=text | head -n 1))
 wget https://golang.org/dl/${GOVER}.linux-arm64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${GOVER}.linux-arm64.tar.gz
 ```
 
 **NOTE**: That will install latest version of Go
 
-
-
-**Install previous version**&#x20;
+**Install previous version**
 
 ```json
 GOVER=go1.20.3

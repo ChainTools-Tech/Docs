@@ -7,7 +7,7 @@ description: Build and synchronize node from state-sync service
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
-* Go 1.18.x or newer - Installation guide [here](../../home/installation-guides/install-golang.md).
+* Go 1.18.x or newer - Installation guide [here](../../home/readme/install-golang.md).
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
@@ -61,6 +61,4 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.decentr/config/config.tom
 decentrd start
 ```
 
-
-
-**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.&#x20;
+**NOTE:** It might take 5-10 minutes for node to catch-up with RPC and download state-sync snapshot.

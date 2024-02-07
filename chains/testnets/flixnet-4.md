@@ -4,12 +4,10 @@ description: Build and synchronize node from state-sync service
 
 # Flixnet-4
 
-
-
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
-* Go 1.18.x or newer - Installation guide [here](../../home/installation-guides/install-golang.md).
+* Go 1.18.x or newer - Installation guide [here](../../home/readme/install-golang.md).
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
@@ -51,4 +49,3 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" /home/flixnet-4/.omniflixhub/con
 ```javascript
 omniflixhubd start
 ```
-

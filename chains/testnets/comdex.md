@@ -2,41 +2,36 @@
 description: Build and synchronize node from state-sync service
 ---
 
-# Juno
+# Comdex
 
 ### Prerequisites
 
 * Ubuntu 20.04 LTS or newer
-* Go 1.18.x or newer - Installation guide [here](broken-reference).
+* Go 1.19.x - Installation guide [here](broken-reference).
 * JSON processor jq - `sudo apt install jq`
 * Essential Build Tools - `sudo apt install build-essential`
 
-{% embed url="https://odysee.com/@ChainToolsAcademy:b/StateSyncJuno:a" %}
-Video demonstrates steps described below.
-{% endembed %}
-
-### Build Juno Node
+### Build Comdex Node
 
 ```bash
-git clone https://github.com/CosmosContracts/juno && cd juno
-git checkout v20.0.0
+git clone https://github.com/comdex-official/comdex.git && cd comdex
+git checkout v13.1.0
 make install
 ```
 
 ### Initialize Juno Node
 
 ```bash
-junod init myNode --chain-id juno-1
-wget -O ${HOME}/.juno/config/addrbook.json https://files.chaintools.tech/chains/juno/addrbook.json
-wget -O ${HOME}/.juno/config/genesis.json.gz https://files.chaintools.tech/chains/juno/genesis.json.gz
-rm ${HOME}/.juno/config/genesis.json && gzip -d ${HOME}/.juno/config/genesis.json.gz
+ init myNode --chain-id comdex-test3
+wget -O ${HOME}/.juno/config/addrbook.json https://files.chaintools.tech/chains/uni/addrbook.json
+wget -O ${HOME}/.juno/config/genesis.json https://raw.githubusercontent.com/CosmosContracts/testnets/main/uni-3/genesis.json
 ```
 
 ### Configure state-sync
 
 ```bash
-SNAP_RPC="https://rpc.juno.chaintools.tech:443"
-SNAP_RPC2="https://rpc.juno.chaintools.tech:443"
+SNAP_RPC="https://rpc.uni.chaintools.tech:443"
+SNAP_RPC2="https://rpc.uni.chaintools.tech:443"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
@@ -51,7 +46,11 @@ s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.juno/config/config.toml
 ```
 
-### Start Juno Node
+**Add these two PEERS to your `config.toml`**&#x20;
+
+`ac9dd6db1d34c15b1de212b0c0c240615bfc2941@207.180.243.215:26656,f7d12b08210b7b759f65e381782d62b556598000@127.0.0.2:26656`&#x20;
+
+### Start Omniflixhub Node
 
 ```
 junod start

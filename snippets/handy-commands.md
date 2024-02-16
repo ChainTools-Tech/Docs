@@ -39,7 +39,11 @@ gaiad q staking validators  --node http://localhost:26657 -o json --limit=1000 |
 ### Set External Address
 
 ```bash
-sed -i "/^external_address = .*/ s//external_address = \"${ADDRESS:="$(curl -fsSL https://ifconfig.me):${PORT:=26656}"}\"/" $HOME/.kujira/config/config.toml
+ip addr
+```
+
+```bash
+sed -i "/^external_address = .*/ s//external_address = \"${ADDRESS:="your_ip_here:${PORT:=26656}"}\"/" $HOME/.kujira/config/config.toml
 ```
 
 ### Number of connected peers

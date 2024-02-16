@@ -24,7 +24,6 @@ description: Build and synchronize node from state-sync service
 noisd init myNode --chain-id nois-1
 wget -O ${HOME}/.noisd/config/addrbook.json https://files.chaintools.tech/chains/nois/addrbook.json
 wget -O ${HOME}/.noisd/config/genesis.json https://files.chaintools.tech/chains/nois/genesis.json
-rm ${HOME}/.noisd/config/genesis.json ${HOME}/.noisd/config/genesis.json
 ```
 
 ### Configure state-sync

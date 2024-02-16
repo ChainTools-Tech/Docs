@@ -21,10 +21,10 @@ description: Build and synchronize node from state-sync service
 ### Initialize Nois Node
 
 ```bash
-gaiad init myNode --chain-id nois-1
+noisd init myNode --chain-id nois-1
 wget -O ${HOME}/.noisd/config/addrbook.json https://files.chaintools.tech/chains/nois/addrbook.json
-wget -O ${HOME}/.noisd/config/genesis.json https://files.chaintools.tech/chains/nois/genesis.json.gz
-rm ${HOME}/.noisd/config/genesis.json && gzip -d ${HOME}/.noisd/config/genesis.json.gz
+wget -O ${HOME}/.noisd/config/genesis.json https://files.chaintools.tech/chains/nois/genesis.json
+rm ${HOME}/.noisd/config/genesis.json ${HOME}/.noisd/config/genesis.json
 ```
 
 ### Configure state-sync

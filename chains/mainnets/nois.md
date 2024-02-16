@@ -14,7 +14,7 @@ description: Build and synchronize node from state-sync service
 ### Build Nois Node
 
 <pre class="language-bash"><code class="lang-bash">git clone https://github.com/noislabs/networks.git
-<strong>git checkout v1.0.0
+<strong>git checkout v1.0.5
 </strong><strong>make install
 </strong></code></pre>
 

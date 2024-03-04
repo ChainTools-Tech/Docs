@@ -14,17 +14,16 @@ description: Build and synchronize node from state-sync service
 ### Build Nois Node
 
 <pre class="language-bash"><code class="lang-bash">git clone https://github.com/noislabs/networks.git
-<strong>git checkout v1.0.0
+<strong>git checkout v1.0.5
 </strong><strong>make install
 </strong></code></pre>
 
 ### Initialize Nois Node
 
 ```bash
-gaiad init myNode --chain-id nois-1
+noisd init myNode --chain-id nois-1
 wget -O ${HOME}/.noisd/config/addrbook.json https://files.chaintools.tech/chains/nois/addrbook.json
-wget -O ${HOME}/.noisd/config/genesis.json https://files.chaintools.tech/chains/nois/genesis.json.gz
-rm ${HOME}/.noisd/config/genesis.json && gzip -d ${HOME}/.noisd/config/genesis.json.gz
+wget -O ${HOME}/.noisd/config/genesis.json https://files.chaintools.tech/chains/nois/genesis.json
 ```
 
 ### Configure state-sync

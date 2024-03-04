@@ -2,7 +2,9 @@
 
 ## Home
 
-* [Installation Guides](README.md)
+* [Useful Validator Information](README.md)
+  * [Pruning Cosmos SDK](home/useful-validator-information/pruning-cosmos-sdk.md)
+* [Installation Guides](home/installation-guides/README.md)
   * [Install Cosmovisor](home/installation-guides/install-cosmovisor.md)
   * [Install Hermes Relayer](home/installation-guides/install-hermes-relayer.md)
   * [Backup Server](home/installation-guides/backup-server.md)
@@ -35,8 +37,9 @@
   * [Omniflix](chains/mainnets/omniflix.md)
   * [Rizon](chains/mainnets/rizon.md)
 * [Testnets](chains/testnets/README.md)
-  * [Flixnet-4](chains/testnets/flixnet-4.md)
-  * [Uni - Juno Testnet](chains/testnets/uni-juno-testnet.md)
+  * [Omniflix](chains/testnets/omniflix.md)
+  * [Juno](chains/testnets/juno.md)
+  * [Comdex](chains/testnets/comdex.md)
 
 ## Snippets
 

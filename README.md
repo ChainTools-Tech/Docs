@@ -1,3 +1,2 @@
-# Node Configuration
+# Installation Guides
 
-Configuration tips for nodes/validators.

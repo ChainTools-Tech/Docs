@@ -2,7 +2,7 @@
 
 ## Home
 
-* [Useful Validator Information](README.md)
+* [Node Configuration](README.md)
   * [Pruning Cosmos SDK](home/useful-validator-information/pruning-cosmos-sdk.md)
 * [Installation Guides](home/installation-guides/README.md)
   * [Install Cosmovisor](home/installation-guides/install-cosmovisor.md)

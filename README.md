@@ -1,5 +1,2 @@
-# Useful Validator Information
+# Installation Guides
 
-
-
-\

@@ -2,14 +2,14 @@
 
 ## Home
 
-* [Useful Validator Information](README.md)
-  * [Pruning Cosmos SDK](home/useful-validator-information/pruning-cosmos-sdk.md)
-* [Installation Guides](home/installation-guides/README.md)
+* [Installation Guides](README.md)
   * [Install Cosmovisor](home/installation-guides/install-cosmovisor.md)
   * [Install Hermes Relayer](home/installation-guides/install-hermes-relayer.md)
   * [Backup Server](home/installation-guides/backup-server.md)
   * [Install Golang](home/installation-guides/install-golang.md)
   * [Install Rust](home/installation-guides/install-rust.md)
+* [Node Configuration](<README (1).md>)
+  * [Pruning Cosmos SDK](home/useful-validator-information/pruning-cosmos-sdk.md)
 * [Tooling Guides](home/tooling-guides/README.md)
   * [Node Monitoring](home/tooling-guides/node-monitoring/README.md)
     * [Panic Cosmos](home/tooling-guides/node-monitoring/panic-cosmos.md)

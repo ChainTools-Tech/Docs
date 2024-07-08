@@ -31,4 +31,3 @@ Network operators should carefully adjust pruning parameters based on factors li
 
 In conclusion, pruning is a critical aspect of managing the storage footprint of Cosmos SDK chains like Juno. By implementing an effective pruning strategy, network participants can ensure the scalability, integrity, and efficiency of the blockchain network.
 
-\

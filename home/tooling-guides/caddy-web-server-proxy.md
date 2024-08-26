@@ -34,20 +34,32 @@ Or just wipe whole content and create your own
 
 ```json
 https://rpc.juno.chaintools.tech { 
-  reverse_proxy http://<RPC-SERVER-IP>:PORT { 
+  reverse_proxy http://<RPC-SERVER-IP>:<PORT> { 
      header_down Access-Control-Allow-Origin * 
   } log { 
          output file /var/log/caddy/rpc.juno.chaintools.tech.log
          } 
- } 
+} 
  
- https://api.juno.chaintools.tech { 
-   reverse_proxy http://<API-SERVER-IP>:PORT { 
+https://api.juno.chaintools.tech { 
+   reverse_proxy http://<API-SERVER-IP>:<PORT> { 
       header_down Access-Control-Allow-Origin * 
   } log { 
          output file /var/log/caddy/api.juno.chaintools.tech.log 
          } 
-  }
+}
+  
+https://grpc.juno.chaintools.tech {
+   reverse_proxy {
+      to h2c://<GRPC-SERVER-IP>:<PORT>
+      transport http  {
+         versions h2c 2
+      }
+   }
+   log {
+       output file /var/log/caddy/grpc.juno.chaintools.tech.log
+   }
+}
 ```
 
 ### **Create a service file for Caddy**

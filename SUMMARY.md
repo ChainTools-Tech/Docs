@@ -8,6 +8,7 @@
   * [Backup Server](home/installation-guides/backup-server.md)
   * [Install Golang](home/installation-guides/install-golang.md)
   * [Install Rust](home/installation-guides/install-rust.md)
+  * [Node.js deployment](home/installation-guides/node.js-deployment.md)
 * [Node Configuration](<README (1).md>)
   * [Pruning Cosmos SDK](home/useful-validator-information/pruning-cosmos-sdk.md)
 * [Tooling Guides](home/tooling-guides/README.md)

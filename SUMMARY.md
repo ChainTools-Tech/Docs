@@ -28,7 +28,6 @@
   * [State-Sync](chains/general/statsync.md)
   * [Validator bootstrap commands](chains/mainnets/validator-bootstrap-commands.md)
 * [Mainnets](chains/mainnets/README.md)
-  * [Andromeda](chains/mainnets/andromeda.md)
   * [Asset Mantle](chains/mainnets/asset-mantle.md)
   * [Beezee](chains/mainnets/beezee.md)
   * [BitCanna](chains/mainnets/bitcanna.md)
